@@ -23,7 +23,7 @@ auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth)
  
 #file location changed
-add_tweets = "Corona.csv"
+batik_tweets = "Batik.csv"
  
 #columns of the csv file
 COLS = ['id', 'created_at', 'source', 'original_text','clean_text', 'sentiment','polarity','subjectivity', 'lang',
@@ -31,8 +31,8 @@ COLS = ['id', 'created_at', 'source', 'original_text','clean_text', 'sentiment',
         'user_mentions', 'place', 'place_coord_boundaries']
  
 #variables for date range
-start_date = '2019-01-04'
-end_date = '2019-01-07'
+start_date = '2019-01-01'
+end_date = '2019-10-01'
  
 #Happy Emoticons
 emoticons_happy = set([
@@ -174,7 +174,7 @@ def write_tweets(keyword, file):
     df.to_csv(csvFile, mode='a', columns=COLS, index=False, encoding="utf-8")
  
 #declare keywords as a query
-batik_keywords = '#corona OR #Corona'
+batik_keywords = '#batik'
  
 #call main method passing keywords and file path
 write_tweets(batik_keywords, batik_tweets)
