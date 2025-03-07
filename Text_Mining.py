@@ -12,10 +12,10 @@ from nltk.tokenize import word_tokenize
  
  
 #Twitter credentials for the app
-consumer_key = 'Lz7QKeXfeJWTM4KBDk4Qe7Uoy'
-consumer_secret = 'OVeAwU9geOBsY4zTAq0Z81tBNbYQEYrEYg0pedPBVgku4VNG71'
-access_key= '55242080-TtBj59kgHRXyrxGoNIjhafDkLbTHH4vb9mCk7GKAV'
-access_secret = 'K1BxqMMhVwx59QFJAkPXydtzFW53Dnf4l9rMTMVNYZmXA'
+consumer_key = 'consumer_key'
+consumer_secret = 'consumer_secret'
+access_key= 'access_key'
+access_secret = 'access_secret'
  
 #pass twitter credentials to tweepy
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
